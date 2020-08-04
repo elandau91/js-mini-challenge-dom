@@ -26,6 +26,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+I moved the javascript link in the html file to the bottom of the body. It wasn't able to read HTML elements at the top and kept returning null. I then accessed the content using template literals and innerContent.
+
 
 ```
 
@@ -35,7 +37,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+I simply used header.style.color = "red" to re-assign the color of the header's color attribute. 
 ```
 
 ## Deliverable 3
@@ -57,7 +59,7 @@ Create a DOM element that looks like this for each player and append it to the `
 
 **YOUR NOTES**
 ```
-
+Success! Was harder than expected and involved switching a photo for TAA. first I created an object called roster that held the players-container div. Then I created a function that allowed you to feed in a data set (in this case PLAYERS) and parse the proper information into html. I looped through the PLAYERS array, and parsed the correct information into the inner HTML of the roster element. Then I called the method!
 ```
 
 ## Deliverable 4
@@ -68,5 +70,6 @@ Hint: You can use `querySelector` with [CSS Attribute Selectors](https://develop
 
 **YOUR NOTES**
 ```
-
+cake! first I found sterling using the CSS selector information on attributes, and assigned the object to sterling. Then I used the .remove() feature to erase him.
 ```
+
